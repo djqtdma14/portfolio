@@ -1,4 +1,5 @@
 import React from 'react';
+import '../scss/FirstPage.scss';
 
 function FristPage(){
   return(

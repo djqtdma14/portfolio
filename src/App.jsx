@@ -6,7 +6,8 @@ import About from './components/About.jsx';
 function App(){
   return(
     <section className='App'>
-
+      <FristPage />
+      <About />
     </section>
   );
 };
