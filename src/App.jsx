@@ -1,13 +1,15 @@
 import React from 'react';
 import './scss/App.scss';
-import FristPage from './components/FirstPage.jsx';
-import About from './components/About.jsx';
+import FristPage from './pages/FirstPage.jsx';
+import Project from './pages/Project.jsx';
+import Profile from './pages/Profile.jsx';
 
 function App(){
   return(
     <section className='App'>
       <FristPage />
-      <About />
+      <Profile />
+      <Project />
     </section>
   );
 };

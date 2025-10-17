@@ -1,18 +1,16 @@
-.FristPage{
+.FirstPage{
   height:100vh;
   position:relative;
   span{
     position:absolute; top:30%; left:100px;
     font-size:4rem; font-weight:700;
-    color:#101010;
-    text-shadow:4px 4px 1px #808080;
-    -webkit-text-stroke:1px #fff;
+    color:#000;
+    text-shadow:4px 4px 1px #808080; -webkit-text-stroke:1px #fff;
   }
   h1{
     position:absolute; top:42%; left:150px;
-    font-size:6rem; font-weight:700;
-    color:#101010;
-    text-shadow:4px 4px 1px #808080;
-    -webkit-text-stroke:1px #fff;
+    font-size:6rem; font-weight:700; letter-spacing:0.2rem;
+    color:#000;
+    text-shadow:4px 4px 1px #808080; -webkit-text-stroke:1px #fff;
   }
 }

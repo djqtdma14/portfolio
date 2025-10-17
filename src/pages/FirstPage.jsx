@@ -1,13 +1,13 @@
 import React from 'react';
 import '../scss/FirstPage.scss';
 
-function FristPage(){
+function FirstPage(){
   return(
-    <section className='FristPage'>
+    <section className='FirstPage'>
       <span>FRONT END</span>
       <h1>PORTFOLIO</h1>
     </section>
   );
 };
 
-export default FristPage;
+export default FirstPage;
