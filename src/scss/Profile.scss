@@ -2,7 +2,7 @@
   height:100vh;
   position:relative;
   h2{
-    position:absolute; top:80px; left:100px;
+    position:absolute; top:80px; left:20px;
     font-size:1.5rem; font-weight:700;
     color:#000;
     text-shadow:2px 2px 1px #808080; -webkit-text-stroke:1px #fff;
@@ -15,14 +15,25 @@
       background-color:#fff;
     } */
   }
+  .about-me{
+    display:inline-block;
+    position:absolute; top:170px; left:20px;
+    width:80%;
+    h3{
+      padding:0 10px;
+      font-size:0.95rem;
+      color:#07b62a;
+    }
+    p{}
+  }
   .about-skill{
     display:inline-block;
-    position:absolute; top:150px; left:100px;
+    position:absolute; top:500px; left:20px;
     background-color:#202020;
     border-radius:7px;
     h3{
       padding:10px 10px 0;
-      font-size:0.85rem;
+      font-size:0.95rem;
       color:#07b62a;
     }
     img{
