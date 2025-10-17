@@ -1,44 +1,36 @@
 .Profile{
-  height:100vh;
-  position:relative;
+  height:1000px;
   h2{
-    position:absolute; top:80px; left:20px;
+    display:flex; align-items:center;
+    height:250px;
+    margin-left:5%;
     font-size:1.5rem; font-weight:700;
     color:#000;
-    text-shadow:2px 2px 1px #808080; -webkit-text-stroke:1px #fff;
-    /* &::after{
-      content:'';
-      display:block;
-      position:absolute; top:50%; left:100%;
-      width:400px; height:1px;
-      margin-left:50px;
-      background-color:#fff;
-    } */
+    text-shadow:1px 1px 1px #808080; -webkit-text-stroke:1px #fff;
   }
-  .about-me{
-    display:inline-block;
-    position:absolute; top:170px; left:20px;
-    width:80%;
-    h3{
-      padding:0 10px;
-      font-size:0.95rem;
-      color:#07b62a;
+  .about{
+    display:flex; flex-direction:column; gap:100px;
+    margin:0 5%;
+    .about-me{
+      display:flex; flex-direction:column; gap:7px;
+      h3{
+        padding:0 5px;
+        font-size:0.95rem;
+        color:#07b62a;
+      }
     }
-    p{}
-  }
-  .about-skill{
-    display:inline-block;
-    position:absolute; top:500px; left:20px;
-    background-color:#202020;
-    border-radius:7px;
-    h3{
-      padding:10px 10px 0;
-      font-size:0.95rem;
-      color:#07b62a;
-    }
-    img{
-      width:30px; height:30px;
-      padding:10px;
+    .about-skill{
+      background-color:#202020;
+      border-radius:7px;
+      h3{
+        padding:5px 10px 0;
+        font-size:0.95rem;
+        color:#07b62a;
+      }
+      img{
+        width:25px; height:25px;
+        padding:10px;
+      }
     }
   }
 }
