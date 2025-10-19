@@ -1,10 +1,10 @@
 import React from 'react';
 import '../scss/Profile.scss';
-import Logos from '../assets/images/Logos.jsx';
+import FrontLogos from '../assets/images/FrontLogos.jsx';
 
 function Profile(){
 
-  const prontLogos = Object.values(Logos);
+  const frontLogos = Object.values(FrontLogos);
 
   return(
     <section className='Profile'>
@@ -13,16 +13,18 @@ function Profile(){
         <section className='about-me'>
           <h3>about me</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, nulla incidunt eligendi quae maiores cum ea impedit reprehenderit esse unde doloremque? Laboriosam obcaecati eligendi est dolore accusantium voluptatibus perspiciatis. Est!
+            실전과 부딪히며 배우는 <span>프론트엔드 개발자 전하람</span>입니다.
           </p>
         </section>
         <section className='about-skill'>
           <h3>skills</h3>
-          {
-            prontLogos.map((logo, idx) => {
-              return <img src={logo} alt={logo.keys} key={idx} />
-            })
-          }
+          <div className='logos'>
+            {
+              frontLogos.map((logo, idx) => {
+                return <img src={logo} alt={logo.keys} key={idx} />
+              })
+            }
+          </div>
         </section>
       </div>
     </section>

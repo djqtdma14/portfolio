@@ -1,8 +1,8 @@
 .Profile{
   height:1000px;
   h2{
-    display:flex; align-items:center;
-    height:250px;
+    display:flex; align-items:flex-end;
+    height:200px;
     margin-left:5%;
     font-size:1.5rem; font-weight:700;
     color:#000;
@@ -10,26 +10,120 @@
   }
   .about{
     display:flex; flex-direction:column; gap:100px;
-    margin:0 5%;
+    margin:0 5%; padding-top:100px;
     .about-me{
       display:flex; flex-direction:column; gap:7px;
       h3{
-        padding:0 5px;
+        padding:0 5px 30px;
         font-size:0.95rem;
         color:#07b62a;
+      }
+      p{
+        font-size:1rem;
+        padding:0 5px;
+        span{
+          color:#07b62a;
+        }
       }
     }
     .about-skill{
       background-color:#202020;
       border-radius:7px;
+      padding:0 10px 30px;
       h3{
-        padding:5px 10px 0;
+        padding:10px 0;
+        margin-bottom:20px;
         font-size:0.95rem;
         color:#07b62a;
       }
-      img{
-        width:25px; height:25px;
-        padding:10px;
+      .logos{
+        h4{
+          font-size:0.75rem;
+          padding-left:10px;
+        }
+        img{
+          width:25px; height:25px;
+          padding:10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:400px){
+  .Profile{
+    h2{
+      margin-left:7%;
+    }
+    .about{
+      margin:0 7%;
+    }
+  }
+}
+
+@media screen and (min-width:600px){
+  .Profile{
+    h2{
+      margin-left:7%;
+    }
+    .about{
+      margin:0 7%;
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+  .Profile{
+    h2{
+      font-size:2rem;
+      margin-left:11%;
+    }
+    .about{
+      margin:0 11%;
+      .about-me{
+        p{
+          font-size:1.25rem;
+        }
+      }
+      .about-skill{
+        .logos{
+          img{
+            width:35px; height:35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1200px){
+  .Profile{
+    h2{
+      font-size:2.5rem;
+      margin-left:13%;
+    }
+    .about{
+      margin:0 13%;
+      .about-me{
+        h3{
+          font-size:1.2rem;
+        }
+        p{
+          font-size:1.75rem; font-weight:600;
+        }
+      }
+      .about-skill{
+        h3{
+          font-size:1.2rem;
+        }
+        .logos{
+          h4{
+            font-size:0.9rem;
+          }
+          img{
+            width:50px; height:50px;
+          }
+        }
       }
     }
   }
