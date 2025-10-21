@@ -5,7 +5,6 @@ function Project(){
   return(
     <section className='Project'>
       <h2>PROJECT</h2>
-      
     </section>
   );
 };

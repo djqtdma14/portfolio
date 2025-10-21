@@ -1,10 +1,12 @@
 import React from 'react';
 import '../scss/Profile.scss';
-import FrontLogos from '../assets/images/FrontLogos.jsx';
+import LanguageLogos from '../components/LanguageLogos.jsx';
+import ToolsLogos from '../components/ToolsLogos.jsx';
 
 function Profile(){
 
-  const frontLogos = Object.values(FrontLogos);
+  const language = Object.values(LanguageLogos);
+  const tools = Object.values(ToolsLogos);
 
   return(
     <section className='Profile'>
@@ -13,14 +15,22 @@ function Profile(){
         <section className='about-me'>
           <h3>about me</h3>
           <p>
-            실전과 부딪히며 배우는 <span>프론트엔드 개발자 전하람</span>입니다.
+            <span>프론트엔드 개발자 전하람</span>입니다.
           </p>
         </section>
         <section className='about-skill'>
-          <h3>skills</h3>
-          <div className='logos'>
+          <div className='language logos'>
+            <h3>Language</h3>
             {
-              frontLogos.map((logo, idx) => {
+              language.map((logo, idx) => {
+                return <img src={logo} alt={logo.keys} key={idx} />
+              })
+            }
+          </div>
+          <div className='tools logos'>
+            <h3>Tools</h3>
+            {
+              tools.map((logo, idx) => {
                 return <img src={logo} alt={logo.keys} key={idx} />
               })
             }
