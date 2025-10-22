@@ -15,7 +15,7 @@ function App(){
       profile: 1,
       project: 2,
     };
-    scrollRef.current[pages[name]].scrollIntoView({ behavior:'smooth'});
+    scrollRef.current[pages[name]].scrollIntoView({behavior:'smooth'});
   };
 
   return(

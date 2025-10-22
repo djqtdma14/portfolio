@@ -1,5 +1,4 @@
 .Project{
-  height:100vh;
   margin:0 5%;
   h2{
     display:flex; align-items:flex-end;
@@ -9,7 +8,14 @@
     text-shadow:1px 1px 1px #808080; -webkit-text-stroke:1px #fff;
   }
   .content{
-    
+    margin:100px 0 200px;
+    img{
+      width:100%; min-width:300px;
+      margin-bottom:20px;
+    }
+    span{
+      font-size:0.95rem;
+    }
   }
 }
 
