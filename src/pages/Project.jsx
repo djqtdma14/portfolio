@@ -7,9 +7,10 @@ function Project(){
     <section className='Project'>
       <h2>PROJECT</h2>
       <div className='content projectname'>
-        <img src={file} alt='file' title='프로젝트 추가 예정입니다.' />
+        <img src={file} alt='file.svg' title='프로젝트 추가 예정입니다.' />
         <div className='context'>
-          <span>프로젝트 추가 예정입니다.</span>
+          <p>프로젝트 추가 예정입니다.</p>
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia, quas ad ipsum aspernatur, ducimus in illum nostrum possimus maiores provident perspiciatis! Fuga, voluptates necessitatibus enim totam quo quia non.</span>
         </div>
       </div>
     </section>

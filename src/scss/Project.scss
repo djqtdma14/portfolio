@@ -1,8 +1,8 @@
 .Project{
   margin:0 7%;
   h2{
-    display:flex; align-items:flex-end;
-    height:200px;
+    display:flex;
+    padding-top:200px;
     font-size:1.5rem; font-weight:700;
     color:#000;
     text-shadow:1px 1px 1px #808080; -webkit-text-stroke:1px #fff;
@@ -10,11 +10,18 @@
   .content{
     margin:100px 0 200px;
     img{
-      width:100%; min-width:300px;
-      margin-bottom:20px;
+      width:100%;
+      margin-bottom:30px;
     }
-    span{
-      font-size:0.95rem;
+    .context{
+      p{
+        font-size:0.95rem;
+        padding-bottom:30px;
+      }
+      span{
+        display:inline-block;
+        font-size:0.8rem;
+      }
     }
   }
 }
@@ -22,6 +29,11 @@
 @media screen and (min-width:600px){
   .Project{
     margin:0 9%;
+    .content{
+      img{
+        max-width:400px;
+      }
+    }
   }
 }
 
@@ -31,6 +43,20 @@
     h2{
       font-size:2rem;
     }
+    .content{
+      img{
+        max-width:50%;
+        padding:0 25%;
+      }
+      .context{
+        p{
+          font-size:1.25rem;
+        }
+        span{
+          font-size:0.95rem;
+        }
+      }
+    }
   }
 }
 
@@ -39,6 +65,22 @@
     margin:0 13%;
     h2{
       font-size:2.5rem;
+    }
+    .content{
+      display:flex; gap:30px;
+      img{
+        flex:1;
+        max-width:500px;
+        padding:0;
+      }
+      .context{
+        flex:1;
+        display:flex; flex-direction:column;
+        p{
+          padding-top:30px;
+          font-size:1.75rem; font-weight:600;
+        }
+      }
     }
   }
 }
