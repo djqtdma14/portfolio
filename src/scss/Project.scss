@@ -1,36 +1,34 @@
 .Project{
   height:100vh;
+  margin:0 5%;
   h2{
     display:flex; align-items:flex-end;
     height:200px;
-    margin-left:5%;
     font-size:1.5rem; font-weight:700;
     color:#000;
     text-shadow:1px 1px 1px #808080; -webkit-text-stroke:1px #fff;
   }
-  
+  .content{
+    
+  }
 }
 
 @media screen and (min-width:400px){
   .Project{
-    h2{
-      margin-left:7%;
-    }
+    margin:0 7%;
   }
 }
 
 @media screen and (min-width:600px){
   .Project{
-    h2{
-      margin-left:9%;
-    }
+    margin:0 9%;
   }
 }
 
 @media screen and (min-width:768px){
   .Project{
+    margin:0 11%;
     h2{
-      margin-left:11%;
       font-size:2rem;
     }
   }
@@ -38,8 +36,8 @@
 
 @media screen and (min-width:1200px){
   .Project{
+    margin:0 13%;
     h2{
-      margin-left:13%;
       font-size:2.5rem;
     }
   }

@@ -3,6 +3,7 @@ import './scss/App.scss';
 import FristPage from './pages/FirstPage.jsx';
 import Project from './pages/Project.jsx';
 import Profile from './pages/Profile.jsx';
+// image by https://icons8.com/, https://techicons.dev/
 
 function App(){
   // https://inthedev.tistory.com/27 - 스크롤 기능
