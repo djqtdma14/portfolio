@@ -1,6 +1,6 @@
 import React from 'react';
 import '../scss/Contact.scss';
-import github from '../assets/images/toolLogos/GIthub.svg';
+import github from '../assets/images/toolLogos/GitHub.svg';
 
 function Contact(){
   return(
