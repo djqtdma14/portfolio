@@ -12,7 +12,7 @@ function App(){
   const handleScrollView = (e) => {
     const name = e.target.innerText;
     const pages = {
-      main : 0,
+      HP : 0,
       profile : 1,
       project : 2,
       contact : 3
@@ -23,7 +23,7 @@ function App(){
   return(
     <section className='App'>
       <div className='Navbar' onClick={handleScrollView}>
-        <span className='main menu'>main</span>
+        <span className='hp menu'>HP</span>
         <nav>
           <span className='profile menu'>profile</span>
           <span className='project menu'>project</span>
