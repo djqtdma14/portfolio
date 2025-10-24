@@ -14,7 +14,9 @@ function Profile(){
       <div className='about'>
         <section className='about-me'>
           <h3>about me</h3>
-          <p><span>프론트엔드 개발자 전하람</span>입니다.</p>
+          <p>
+            <span>프론트엔드 개발자 전하람</span>입니다.
+          </p>
         </section>
         <section className='about-skill'>
           <div className='language logos'>
