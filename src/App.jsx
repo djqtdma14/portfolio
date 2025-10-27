@@ -4,9 +4,9 @@ import FristPage from './pages/FirstPage.jsx';
 import Project from './pages/Project.jsx';
 import Profile from './pages/Profile.jsx';
 import Contact from './pages/Contact.jsx';
-// image by https://icons8.com/, https://techicons.dev/
 
 function App(){
+
   // https://inthedev.tistory.com/27 - 스크롤 기능 사용
   const scrollRef = useRef([]);
   const handleScrollView = (e) => {
@@ -22,14 +22,16 @@ function App(){
 
   return(
     <section className='App'>
-      <div className='Navbar' onClick={handleScrollView}>
+      <section className='Navbar' onClick={handleScrollView}>
         <span className='hp menu'>HP</span>
-        <nav>
-          <span className='profile menu'>profile</span>
-          <span className='project menu'>project</span>
-          <span className='contact menu'>contact</span>
+        <nav className='sidebar'>
+          <ul>
+            <li className='profile menu'>profile</li>
+            <li className='project menu'>project</li>
+            <li className='contact menu'>contact</li>
+          </ul>
         </nav>
-      </div>
+      </section>
       <div ref={(el) => (scrollRef.current[0] = el)}>
         <FristPage />
       </div>

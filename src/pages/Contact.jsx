@@ -1,21 +1,26 @@
 import React from 'react';
 import '../scss/Contact.scss';
-import github from '../assets/images/toolLogos/GitHub.svg';
+import githubImg from '../assets/images/toolLogos/GitHub.svg';
 
 function Contact(){
   return(
     <section className='Contact'>
-      <h2>CONTACT</h2>
-      <div className='git'>
-        <a href='https://github.com/djqtdma14' target='_blank'>
-          <img src={github} alt='github.svg' />
-          <span>깃허브 주소</span>
+      <div className='content'>
+        <h2>CONTACT</h2>
+        <div className='link'>
+          <a href='https://github.com/djqtdma14' target='_blank' className='git'>
+            <img src={githubImg} alt='github.svg' />
+            <span>GitHub</span>
+          </a>
+        </div>
+        <a href='https://github.com/djqtdma14' target='_blank' className='github-fixed'>
+          <img src={githubImg} alt='github.svg' />
+          <span>GitHub</span>
         </a>
       </div>
-      <a href='https://github.com/djqtdma14' target='_blank' className='github-link'>
-        <img src={github} alt='github.svg' />
-        <span>GitHub</span>
-      </a>
+      <div className='foot'>
+        <span className='image-site'>Image By <a href='https://icons8.com' target='_blank'>https://icons8.com</a>, <a href='https://techicons.dev' target='_blank'>https://techicons.dev</a></span>
+      </div>
     </section>
   );
 };

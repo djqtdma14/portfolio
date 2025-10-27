@@ -1,77 +1,119 @@
 .Contact{
-  height:100vh;
-  margin:0 7%;
+  height:1100px;
   position:relative;
-  h2{
-    position:absolute; top:200px; left:50%;
-    transform:translate(-50%);
-    font-size:1.5rem; font-weight:700;
-    color:#000;
-    text-shadow:1px 1px 1px #808080; -webkit-text-stroke:1px #fff;
-  }
-  .git{
-    position:absolute; top:350px; left:50%;
-    display:flex;
-    transform:translate(-50%);
-    border-radius:10px;
-    background-color:#202020;
-    a{
-      display:flex; flex-direction:column; gap:15px;
-      margin:30px 20px;
-      img{
-        width:50px; height:50px;
-        align-self:center;
+  .content{
+    margin:0 7%;
+    h2{
+      position:absolute; top:200px; left:50%;
+      transform:translate(-50%);
+      font-size:1.5rem; font-weight:700;
+      color:#000;
+      text-shadow:1px 1px 1px #808080; -webkit-text-stroke:1px #fff;
+    }
+    .link{
+      position:absolute; top:350px; left:50%;
+      display:flex;
+      transform:translate(-50%);
+      border-radius:10px;
+      background-color:#202020;
+      a{
+        display:flex; flex-direction:column; gap:15px;
+        margin:30px 35px;
+        img{
+          width:50px; height:50px;
+          align-self:center;
+        }
+        span{
+          font-size:0.75rem; text-align:center;
+        }
       }
-      span{
-        font-size:0.75rem; text-align:center;
+    }
+    .github-fixed{
+      position:fixed; bottom:70px; right:7%;
+      img{
+        width:30px; height:30px;
       }
     }
   }
-  .github-link{
-    position:fixed; bottom:30px; right:7%;
-    img{
-      width:30px; height:30px;
+  .foot{
+    position:absolute; bottom:0;
+    width:100%; height:50px;
+    background-color:rgba(255,255,255, .08);
+    .image-site{
+      font-size:0.75rem;
+      position:absolute; left:7%; top:50%;
+      opacity:0.8;
+      transform:translateY(-50%);
+      a:hover{
+        text-decoration:underline;
+      }
     }
   }
 }
 
 @media screen and (min-width:600px){
   .Contact{
-    margin:0 9%;
-    .github-link{
-      right:9%;
+    .content{
+      margin:0 9%;
+      .link{
+        a{
+          margin:30px 50px;
+        }
+      }
+      .github-fixed{
+        right:9%;
+      }
+    }
+    .foot{
+      .image-site{
+        left:9%;
+      }
     }
   }
 }
 
 @media screen and (min-width:768px){
   .Contact{
-    margin:0 11%;
-    h2{
-      font-size:2rem;
-    }
-    .git{
-      a{
-      margin:30px 50px;
-        img{
-          width:70px; height:70px;
+    .content{
+      margin:0 11%;
+      h2{
+        font-size:2rem;
+      }
+      .link{
+        a{
+          img{
+            width:70px; height:70px;
+          }
         }
       }
+      .github-fixed{
+        right:11%;
+      }
     }
-    .github-link{
-      right:11%;
+    .foot{
+      .image-site{
+        left:11%;
+        font-size:0.8rem;
+      }
     }
   }
 }
 
 @media screen and (min-width:1200px){
   .Contact{
-    margin:0 13%;
-    h2{
-      font-size:2.5rem;
+    .content{
+      margin:0 13%;
+      h2{
+        font-size:2.5rem;
+      }
+      .github-fixed{
+        right:13%;
+      }
     }
-    .github-link{
-      right:13%;
+    .foot{
+      .image-site{
+        left:13%;
+      }
     }
   }
 }
