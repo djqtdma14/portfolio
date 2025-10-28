@@ -23,7 +23,7 @@ function App(){
   return(
     <section className='App'>
       <section className='Navbar' onClick={handleScrollView}>
-        <span className='hp menu'>HP</span>
+        <span className='hp menu'>Test</span>
         <nav className='sidebar'>
           <ul>
             <li className='profile menu'>profile</li>
