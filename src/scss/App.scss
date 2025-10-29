@@ -26,14 +26,14 @@ a{ color:#fff; text-decoration:none; }
     .sidebar{
       position:fixed; top:0; right:0;
       width:150px; height:100vh;
+      border-left:3px solid #fff; border-bottom:3px solid #fff; border-end-start-radius:45px;
+      box-sizing:border-box;
       background-color:#101010;
       .RiBack{
-        width:100%;
-        padding:calc(75px / 2) 0;
+        padding:calc(75px / 2) 30px;
         font-size:25px;
       }
       ul{
-        width:100%;
         li{
           padding:15px 30px;
           &:hover,

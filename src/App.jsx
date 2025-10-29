@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { RiDeleteBack2Line, RiMenu3Line } from 'react-icons/ri';
 import './scss/App.scss';
 import FristPage from './pages/FirstPage.jsx';
@@ -18,10 +18,13 @@ function App(){
       project : 'Project',
       contact : 'Contact'
     };
-    e.target.innerText
+    name
     ? scrollRef.current[pages[name]].scrollIntoView({behavior:'smooth'})
     : e.preventDefault();
   };
+
+// active 클래스 부여, 제거
+  
 
 // 메뉴 바 여는 기능
   const openHandler = () => {
@@ -34,15 +37,15 @@ function App(){
 
   return(
     <section className='App'>
-      <section className='Navbar' onClick={handleScrollView}>
-        <span className='main menu'>main</span>
+      <section className='Navbar'>
+        <span className='logo menu' onClick={handleScrollView}>main</span>
         <RiMenu3Line className='RiMenu' onClick={openHandler} />
         <nav className='sidebar'>
           <RiDeleteBack2Line className='RiBack' onClick={closeHandler} />
           <ul>
-            <li className='profile menu'>profile</li>
-            <li className='project menu'>project</li>
-            <li className='contact menu'>contact</li>
+            <li className={'profile menu '} onClick={(e) => {handleScrollView(e);}}>profile</li>
+            <li className='project menu ' onClick={handleScrollView}>project</li>
+            <li className='contact menu ' onClick={handleScrollView}>contact</li>
           </ul>
         </nav>
       </section>
