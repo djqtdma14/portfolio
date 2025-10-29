@@ -2,6 +2,10 @@ import React from 'react';
 import '../scss/Contact.scss';
 import githubImg from '../assets/images/toolLogos/GitHub.svg';
 
+// 사용한 이미지 사이트
+// https://icons8.com
+// https://techicons.dev
+
 function Contact(){
   return(
     <section className='Contact'>
@@ -19,7 +23,11 @@ function Contact(){
         </a>
       </div>
       <div className='foot'>
-        <span className='image-site'>Image By <a href='https://icons8.com' target='_blank'>https://icons8.com</a>, <a href='https://techicons.dev' target='_blank'>https://techicons.dev</a></span>
+        <div className='image-site'>
+          Image By 
+          <a href='https://icons8.com' target='_blank'>https://icons8.com</a>, 
+          <a href='https://techicons.dev' target='_blank'>https://techicons.dev</a>
+        </div>
       </div>
     </section>
   );

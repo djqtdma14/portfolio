@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { RiDeleteBack2Line, RiMenu3Line } from 'react-icons/ri';
 import './scss/App.scss';
 import FristPage from './pages/FirstPage.jsx';
 import Project from './pages/Project.jsx';
@@ -7,24 +8,37 @@ import Contact from './pages/Contact.jsx';
 
 function App(){
 
-  // https://inthedev.tistory.com/27 - 스크롤 기능 사용
+// https://inthedev.tistory.com/27 - 클릭한 텍스트와 같은 이름의 페이지로 스크롤 이동
   const scrollRef = useRef([]);
   const handleScrollView = (e) => {
     const name = e.target.innerText;
     const pages = {
-      main : 0,
-      profile : 1,
-      project : 2,
-      contact : 3
+      main : 'FirstPage',
+      profile : 'Profile',
+      project : 'Project',
+      contact : 'Contact'
     };
-    scrollRef.current[pages[name]].scrollIntoView({behavior:'smooth'});
+    e.target.innerText
+    ? scrollRef.current[pages[name]].scrollIntoView({behavior:'smooth'})
+    : e.preventDefault();
+  };
+
+// 메뉴 바 여는 기능
+  const openHandler = () => {
+    console.log('open menu');
+  };
+// 메뉴 바 닫는 기능
+  const closeHandler = () => {
+    console.log('close menu');
   };
 
   return(
     <section className='App'>
       <section className='Navbar' onClick={handleScrollView}>
         <span className='main menu'>main</span>
+        <RiMenu3Line className='RiMenu' onClick={openHandler} />
         <nav className='sidebar'>
+          <RiDeleteBack2Line className='RiBack' onClick={closeHandler} />
           <ul>
             <li className='profile menu'>profile</li>
             <li className='project menu'>project</li>
@@ -32,16 +46,16 @@ function App(){
           </ul>
         </nav>
       </section>
-      <div ref={(el) => (scrollRef.current[0] = el)}>
+      <div ref={(el) => (scrollRef.current['FirstPage'] = el)}>
         <FristPage />
       </div>
-      <div ref={(el) => (scrollRef.current[1] = el)}>
+      <div ref={(el) => (scrollRef.current['Profile'] = el)}>
         <Profile />
       </div>
-      <div ref={(el) => (scrollRef.current[2] = el)}>
+      <div ref={(el) => (scrollRef.current['Project'] = el)}>
         <Project />
       </div>
-      <div ref={(el) => (scrollRef.current[3] = el)}>
+      <div ref={(el) => (scrollRef.current['Contact'] = el)}>
         <Contact />
       </div>
     </section>

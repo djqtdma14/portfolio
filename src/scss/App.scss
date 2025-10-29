@@ -22,9 +22,26 @@ a{ color:#fff; text-decoration:none; }
       text-shadow:1px 1px 1px #808080; -webkit-text-stroke:1px #fff;
       cursor:pointer;
     }
+    .RiMenu{ font-size:25px; }
     .sidebar{
+      position:fixed; top:0; right:0;
+      width:150px; height:100vh;
+      background-color:#101010;
+      .RiBack{
+        width:100%;
+        padding:calc(75px / 2) 0;
+        font-size:25px;
+      }
       ul{
-        display:flex; gap:25px;
+        width:100%;
+        li{
+          padding:15px 30px;
+          &:hover,
+          &.active{
+            text-shadow:1px 1px 1px #080808; -webkit-text-stroke:1px #091B76;
+            color:#fff; background-color:#fff;
+          }
+        }
       }
     }
   }
