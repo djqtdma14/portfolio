@@ -12,7 +12,7 @@ function Contact(){
       <div className='content'>
         <h2>CONTACT</h2>
         <div className='link'>
-          <a href='https://github.com/djqtdma14' target='_blank' className='git'>
+          <a href='https://github.com/djqtdma14/portfolio' target='_blank' className='git'>
             <img src={githubImg} alt='github.svg' />
             <span>GitHub</span>
           </a>

@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
+// import styled from 'styled-component';
 import { RiDeleteBack2Line, RiMenu3Line } from 'react-icons/ri';
 import './scss/App.scss';
 import FristPage from './pages/FirstPage.jsx';
@@ -13,7 +14,7 @@ function App(){
   const handleScrollView = (e) => {
     const name = e.target.innerText;
     const pages = {
-      main : 'FirstPage',
+      home : 'FirstPage',
       profile : 'Profile',
       project : 'Project',
       contact : 'Contact'
@@ -23,15 +24,12 @@ function App(){
     : e.preventDefault();
   };
 
-// active 클래스 부여, 제거
-  
-
 // 메뉴 바 여는 기능
-  const openHandler = () => {
-    console.log('open menu');
+  const openMenuHandler = () => {
+    
   };
 // 메뉴 바 닫는 기능
-  const closeHandler = () => {
+  const closeMenuHandler = () => {
     console.log('close menu');
   };
 
@@ -39,11 +37,12 @@ function App(){
     <section className='App'>
       <section className='Navbar'>
         <span className='logo menu' onClick={handleScrollView}>main</span>
-        <RiMenu3Line className='RiMenu' onClick={openHandler} />
+        <RiMenu3Line className='RiMenu' onClick={openMenuHandler} />
         <nav className='sidebar'>
-          <RiDeleteBack2Line className='RiBack' onClick={closeHandler} />
+          <RiDeleteBack2Line className='RiBack' onClick={closeMenuHandler} />
           <ul>
-            <li className={'profile menu '} onClick={(e) => {handleScrollView(e);}}>profile</li>
+            <li className='home menu ' onClick={handleScrollView}>home</li>
+            <li className='profile menu ' onClick={handleScrollView}>profile</li>
             <li className='project menu ' onClick={handleScrollView}>project</li>
             <li className='contact menu ' onClick={handleScrollView}>contact</li>
           </ul>
