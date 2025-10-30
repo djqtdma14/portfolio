@@ -24,11 +24,12 @@ a{ color:#fff; text-decoration:none; }
     }
     .RiMenu{ font-size:25px; }
     .sidebar{
-      position:fixed; top:0; right:-1000px;
+      position:fixed; top:0; right:-9000px;
       width:150px; height:100vh;
       border-left:3px solid #fff; border-bottom:3px solid #fff; border-end-start-radius:45px;
       box-sizing:border-box;
       background-color:#101010;
+      transition:.4s;
       .RiBack{
         padding:calc(75px / 2) 30px;
         font-size:25px;

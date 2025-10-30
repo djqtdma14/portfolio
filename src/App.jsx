@@ -15,13 +15,12 @@ function App(){
     const name = e.target.innerText;
     const pages = {
       home : 'FirstPage',
+      main : 'FirstPage',
       profile : 'Profile',
       project : 'Project',
       contact : 'Contact'
     };
-    name
-    ? scrollRef.current[pages[name]].scrollIntoView({behavior:'smooth'})
-    : e.preventDefault();
+    scrollRef.current[pages[name]].scrollIntoView({behavior:'smooth'});1
   };
 
 // 메뉴 바 여는 기능
@@ -30,7 +29,7 @@ function App(){
   };
 // 메뉴 바 닫는 기능
   const closeMenuHandler = () => {
-    console.log('close menu');
+    
   };
 
   return(

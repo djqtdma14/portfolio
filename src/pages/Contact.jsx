@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdOutlineEmail } from 'react-icons/md';
 import '../scss/Contact.scss';
 import githubImg from '../assets/images/toolLogos/GitHub.svg';
 
@@ -16,6 +17,10 @@ function Contact(){
             <img src={githubImg} alt='github.svg' />
             <span>GitHub</span>
           </a>
+          <a href='https://github.com/djqtdma14/portfolio' target='_blank' className='mail'>
+            <MdOutlineEmail className='MdEmail' />
+            <span>jhram7475@gmail.com</span>
+          </a>
         </div>
         <a href='https://github.com/djqtdma14' target='_blank' className='github-fixed'>
           <img src={githubImg} alt='github.svg' />
@@ -25,8 +30,8 @@ function Contact(){
       <div className='foot'>
         <div className='image-site'>
           Image By 
-          <a href='https://icons8.com' target='_blank'>https://icons8.com</a>, 
-          <a href='https://techicons.dev' target='_blank'>https://techicons.dev</a>
+          <a href='https://icons8.com' target='_blank'> https://icons8.com,</a>
+          <a href='https://techicons.dev' target='_blank'> https://techicons.dev</a>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 .Contact{
-  height:1100px;
+  height:700px;
   position:relative;
   .content{
     margin:0 7%;
@@ -12,15 +12,19 @@
     }
     .link{
       position:absolute; top:350px; left:50%;
-      display:flex;
+      display:flex; flex-direction:column;
       transform:translate(-50%);
       border-radius:10px;
       background-color:#202020;
       a{
         display:flex; flex-direction:column; gap:15px;
-        margin:30px 35px;
+        margin:20px 20px;
         img{
-          width:50px; height:50px;
+          width:30px; height:30px;
+          align-self:center;
+        }
+        .MdEmail{
+          width:30px; height:30px;
           align-self:center;
         }
         span{
