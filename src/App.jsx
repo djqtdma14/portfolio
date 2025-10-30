@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-// import styled from 'styled-component';
+import React, { useRef, useState } from 'react';
 import { RiDeleteBack2Line, RiMenu3Line } from 'react-icons/ri';
 import './scss/App.scss';
 import FristPage from './pages/FirstPage.jsx';
@@ -9,7 +8,7 @@ import Contact from './pages/Contact.jsx';
 
 function App(){
 
-// https://inthedev.tistory.com/27 - 클릭한 텍스트와 같은 이름의 페이지로 스크롤 이동
+// 클릭한 텍스트와 같은 이름의 페이지로 스크롤 이동
   const scrollRef = useRef([]);
   const handleScrollView = (e) => {
     const name = e.target.innerText;
@@ -23,22 +22,19 @@ function App(){
     scrollRef.current[pages[name]].scrollIntoView({behavior:'smooth'});1
   };
 
-// 메뉴 바 여는 기능
-  const openMenuHandler = () => {
-    
-  };
-// 메뉴 바 닫는 기능
-  const closeMenuHandler = () => {
-    
+// 메뉴바 토글 버튼
+  const [menu, setMenu] = useState(false);
+  const toggleMenu = () => {
+    setMenu(menu => !menu);
   };
 
   return(
     <section className='App'>
       <section className='Navbar'>
         <span className='logo menu' onClick={handleScrollView}>main</span>
-        <RiMenu3Line className='RiMenu' onClick={openMenuHandler} />
-        <nav className='sidebar'>
-          <RiDeleteBack2Line className='RiBack' onClick={closeMenuHandler} />
+        <RiMenu3Line className='RiMenu' onClick={toggleMenu} />
+        <nav className={`sidebar ${menu ? 'openMenu' : 'closeMenu'}`}>
+          <RiDeleteBack2Line className='RiBack' onClick={toggleMenu} />
           <ul>
             <li className='home menu ' onClick={handleScrollView}>home</li>
             <li className='profile menu ' onClick={handleScrollView}>profile</li>

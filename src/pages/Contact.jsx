@@ -17,10 +17,10 @@ function Contact(){
             <img src={githubImg} alt='github.svg' />
             <span>GitHub</span>
           </a>
-          <a href='https://github.com/djqtdma14/portfolio' target='_blank' className='mail'>
+          <span className='mail'>
             <MdOutlineEmail className='MdEmail' />
-            <span>jhram7475@gmail.com</span>
-          </a>
+            <span>mail : jhram7475@gmail.com</span>
+          </span>
         </div>
         <a href='https://github.com/djqtdma14' target='_blank' className='github-fixed'>
           <img src={githubImg} alt='github.svg' />
