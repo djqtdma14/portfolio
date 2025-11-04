@@ -15,11 +15,11 @@ function Contact(){
         <div className='link'>
           <a href='https://github.com/djqtdma14/portfolio' target='_blank' className='git'>
             <img src={githubImg} alt='github.svg' />
-            <span>GitHub</span>
+            <span className='con-msg'>GitHub &#40;portfolio&#41;</span>
           </a>
           <span className='mail'>
             <MdOutlineEmail className='MdEmail' />
-            <span>mail : jhram7475@gmail.com</span>
+            <span className='con-msg'>mail : jhram7475@gmail.com</span>
           </span>
         </div>
         <a href='https://github.com/djqtdma14' target='_blank' className='github-fixed'>
@@ -29,9 +29,10 @@ function Contact(){
       </div>
       <div className='foot'>
         <div className='image-site'>
-          Image By 
-          <a href='https://icons8.com' target='_blank'> https://icons8.com,</a>
-          <a href='https://techicons.dev' target='_blank'> https://techicons.dev</a>
+          <span>Image By </span>
+          <a href='https://icons8.com' target='_blank'>icons8, </a>
+          <a href='https://techicons.dev' target='_blank'>techicons, </a>
+          <a href='https://react-icons.github.io/react-icons' target='_blank'>react-icons</a>
         </div>
       </div>
     </section>
